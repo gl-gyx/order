@@ -11,7 +11,7 @@ public class Order {
         shipFeed=shipfeed();
     }
     public int total(){
-        return (amount+ delivery.price);
+        return (amount+ shipFeed);
     }
     public int shipfeed() {
         if (delivery.name == "shopee" && delivery.price > 199){
